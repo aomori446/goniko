@@ -30,6 +30,8 @@ go build -o goniko
 
 ブラウザから取得した **ニコニコのログイン Cookie** を保存：
 
+[ニコ生のcookieとは？](https://github.com/aomori446/goniko/wiki/ニコ生のcookieとは？)
+
 ``` bash
 ./goniko cookie --raw "your_raw_cookie_string" -o cookies.txt
 ```
