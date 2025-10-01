@@ -1,15 +1,11 @@
 # Goniko
 
-Niconico Live (ニコニコ生放送)
-の番組をダウンロードするためのツールです。\
-動画 (MP4) または音声 (MP3) の保存をサポートし、Cookie
-管理機能も提供します。
+Ninonama(ニコ生)生放送のタイムシフト配信動画をダウンロードするためのツールです。
+動画 (MP4) または音声 (MP3) の保存をサポートし、Cookie管理機能も提供します。
 
 ## 特徴
 
--   ニコ生から動画 (MP4) をダウンロード
--   音声のみ (MP3) をダウンロード
--   Cookie によるログイン認証をサポート
+-   `yt-dlp` を使用して音声か動画をダウンロード
 -   `ffmpeg` を使用して音声と動画を結合
 -   `cookie` サブコマンドで Cookie を保存可能
 
@@ -17,12 +13,13 @@ Niconico Live (ニコニコ生放送)
 
 -   [Go](https://go.dev/) 1.21+
 -   [ffmpeg](https://ffmpeg.org/) がインストールされていること
--   ニコニコのアカウントとログイン Cookie
+-   [yt-dlp](https://github.com/yt-dlp/yt-dlp)がインストールされていること
+-   ニコニコのCookie
 
 ## インストール方法
 
 ``` bash
-git clone https://github.com/yourname/goniko.git
+git clone https://github.com/aomori446/goniko.git
 cd goniko
 go build -o goniko
 ```
